@@ -37,7 +37,7 @@ function writeNew(content, filename) {
         console.log('Wrote that line!');
 })};
 
-// call funs to write
+// call funcs to write
 if (process.argv[2].startsWith('--out')) {
         process.argv[4].startsWith('http') ? webCat(process.argv[4], process.argv[3]) : cat(process.argv[4], process.argv[3]);
 } else {
